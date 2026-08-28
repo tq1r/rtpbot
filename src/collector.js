@@ -50,7 +50,7 @@ class RTPCollector {
     const cacheDir = path.resolve(__dirname, '..', 'data', 'auth-cache');
     if (!fs.existsSync(cacheDir)) fs.mkdirSync(cacheDir, { recursive: true });
 
-    const authflow = new Authflow(email, cacheDir, { password, flow: 'msa' });
+    const authflow = new Authflow(email, cacheDir, { password, flow: 'live' });
     const result = await authflow.getMinecraftJavaToken();
 
     this.onConnect?.(result.profile.name);
