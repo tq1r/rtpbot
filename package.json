@@ -7,11 +7,12 @@
     "start": "node src/index.js"
   },
   "dependencies": {
+    "chalk": "^4.1.2",
     "discord.js": "^14.16.3",
-    "mineflayer": "^4.24.0",
-    "prismarine-auth": "^2.7.0",
     "jimp": "^0.22.12",
-    "chalk": "^4.1.2"
+    "minecraft-auth": "^2.0.10",
+    "mineflayer": "^4.24.0",
+    "prismarine-auth": "^2.7.0"
   },
   "engines": {
     "node": ">=18.0.0"

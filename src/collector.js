@@ -4,6 +4,9 @@
  *          anti-kick that looks human, auto-reconnect with data preservation
  */
 
+// Patch xboxlive-auth PPFT parsing BEFORE prismarine-auth loads it
+require('./patch-auth');
+
 const mineflayer = require('mineflayer');
 const { Authflow } = require('prismarine-auth');
 const fs = require('fs');
