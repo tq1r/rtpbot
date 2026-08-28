@@ -1,0 +1,19 @@
+{
+  "name": "rtp-mapper-discord",
+  "version": "1.0.0",
+  "description": "RTP Mapper Discord Bot - Maps RTP distributions to find gold zones on Minecraft SMPs",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "mineflayer": "^4.24.0",
+    "prismarine-auth": "^2.3.0",
+    "jimp": "^0.22.12",
+    "chalk": "^4.1.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

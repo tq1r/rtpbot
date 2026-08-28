@@ -1,0 +1,31 @@
+{
+  "discord": {
+    "clientId": null
+  },
+  "server": {
+    "host": "donutsmp.net",
+    "port": 25565,
+    "version": "1.21.4"
+  },
+  "auth": {
+    "email": "",
+    "password": ""
+  },
+  "rtp": {
+    "command": "/rtp",
+    "sampleCount": 1000,
+    "delayMs": 2000,
+    "parseFromChat": true
+  },
+  "worldBorder": 225000,
+  "goldZone": {
+    "cellSize": 5000,
+    "thresholdPercentile": 10,
+    "smoothing": true
+  },
+  "tpahere": {
+    "target": ".ttxmoo",
+    "enabled": true,
+    "mode": "tpahere"
+  }
+}
