@@ -51,7 +51,7 @@ class GoldZoneFinder {
     const { email, password } = this.config.auth;
     const cacheDir = path.resolve(__dirname, '..', 'data', 'auth-cache');
     if (!fs.existsSync(cacheDir)) fs.mkdirSync(cacheDir, { recursive: true });
-    const authflow = new Authflow(email, cacheDir, { password, flow: 'msal' });
+    const authflow = new Authflow(email, cacheDir, { password, flow: 'msal', authTitle: '00000000402b5328' });
     const result = await authflow.getMinecraftJavaToken();
     this.onConnect?.(result.profile.name);
     this.bot = mineflayer.createBot({
